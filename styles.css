@@ -6,20 +6,25 @@
 }
 
 body {
+    background-color: white;
+    font-family: 'Outfit', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: hsl(212, 45%, 89%);
-    font-family: 'Outfit', sans-serif;
 }
 
-/* Ensures the main container does NOT take full height */
+
+/* Main should NOT take up full screen */
 main {
+    background-color: hsl(212, 45%, 89%);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    padding: 80px 0px;
+    margin: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* QR Card Styling */
@@ -28,9 +33,9 @@ main {
     padding: 16px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Light shadow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     width: 100%;
-    max-width: 320px; /* Ensures the card does not stretch */
+    max-width: 320px;
 }
 
 /* QR Code Image */
@@ -41,10 +46,11 @@ main {
 
 /* Heading */
 .qr-card h1 {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
-    margin: 20px 0 12px;
+    margin: 20px 10px 12px;
+    letter-spacing: 0.03em;
 }
 
 /* Paragraph */
@@ -53,6 +59,8 @@ main {
     font-weight: 400;
     color: hsl(220, 15%, 55%);
     line-height: 1.4;
+    margin: 0px 10px 20px;
+    letter-spacing: .09em;
 }
 
 /* Responsive Design */
